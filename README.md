@@ -1,22 +1,29 @@
-# Vital Agentes — Brandbook Interactivo
-
-Proyecto HTML, CSS y JS para visualizar el manual de identidad como libro interactivo.
-
-## Cómo abrirlo
-
-1. Descomprime el ZIP.
-2. Abre `index.html` en tu navegador.
-3. Para mejor funcionamiento, usa Live Server en VS Code.
-
-## Librería usada
-
-StPageFlip / page-flip desde CDN:
-`https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.js`
+# Vital Agentes Landing
 
 ## Estructura
 
-vital-agentes-brandbook/
-├── index.html
-├── css/style.css
-├── js/app.js
-└── assets/logo-vital-agentes.svg
+- index.html
+- css/style.css
+- js/app.js
+- assets/logo-vital.svg
+- assets/logo-vital-white.svg
+- php/conexion.php
+- php/guardar.php
+- sql/database.sql
+
+## Cómo correrlo
+
+1. Coloca la carpeta en `htdocs` si usas XAMPP.
+2. Importa `sql/database.sql` en phpMyAdmin.
+3. Ajusta los datos de conexión en `php/conexion.php`.
+4. Abre:
+   `http://localhost/vital-agentes-landing-clean/`
+
+## Formulario
+
+El formulario envía a `php/guardar.php` y guarda en la tabla `leads`.
+
+## Nota
+
+Cambia el número de WhatsApp en `index.html`:
+`https://wa.me/525512345678`

@@ -3,152 +3,314 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Brandbook Interactivo | Vital Agentes</title>
+
+  <title>Vital Agentes | Tu tranquilidad empieza aquí</title>
+  <meta name="description" content="Seguros de vida, auto, hogar, gastos médicos y empresariales. Cotiza con Vital Agentes." />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-  <main class="app-shell">
-    <header class="topbar">
-      <div class="brand-mini"><img src="assets/vitalaagentes.png" alt="Vital Agentes" /></div>
-      <nav class="top-actions">
-        <button id="prevBtn" class="ghost-btn">Anterior</button>
-        <span id="pageIndicator">Página 1 / 10</span>
-        <button id="nextBtn" class="primary-btn">Siguiente</button>
+  <header class="site-header" id="top">
+    <div class="container navbar">
+      <a class="brand" href="#inicio" aria-label="Vital Agentes">
+        <img src="assets/logo-vital.svg" alt="Vital Agentes" />
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#inicio">Inicio</a>
+        <a href="#quienes-somos">Quiénes somos</a>
+        <a href="#seguros">Seguros</a>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#contacto" class="nav-cta">Contáctanos</a>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <section class="hero">
-      <div>
-        <p class="eyebrow">Manual de identidad de marca</p>
-        <h1>Vital Agentes<br><span>Brandbook interactivo</span></h1>
-      </div>
-      <p class="hero-text">Una guía visual para mantener una identidad profesional, confiable y consistente en todos los puntos de contacto.</p>
-    </section>
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Tu tranquilidad empieza aquí</p>
+          <h1>Protegemos lo que da vida a <span>tu futuro.</span></h1>
+          <p class="hero-text">
+            Seguros diseñados para cuidar lo que más importa: tu vida, tu familia y tu patrimonio.
+            Asesoría personalizada y respaldo en cada etapa.
+          </p>
 
-    <section class="book-stage">
-      <div id="book" class="book">
-        <article class="page page-cover page-hard">
-          <div class="cover-inner">
-            <img class="cover-logo" src="assets/vitalaagentes.png" alt="Vital Agentes Logo">
-            <div>
-              <p class="cover-label">Manual de identidad de marca</p>
-              <h2>Guía oficial del logotipo y elementos visuales</h2>
+          <div class="hero-actions">
+            <a href="#contacto" class="btn btn-primary">
+              <span>➜</span> Quiero cotizar
+            </a>
+            <a href="https://wa.me/525512345678" class="btn btn-secondary" target="_blank" rel="noopener">
+              <span>☘</span> Hablar por WhatsApp
+            </a>
+          </div>
+
+          <div class="trust-row">
+            <div class="avatars">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=120&auto=format&fit=crop" alt="">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=120&auto=format&fit=crop" alt="">
+              <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?q=80&w=120&auto=format&fit=crop" alt="">
             </div>
-            <span class="year">2025</span>
+            <div>
+              <div class="stars">★★★★★</div>
+              <p>+1,500 familias protegidas confían en nosotros</p>
+            </div>
           </div>
-        </article>
+        </div>
 
-        <article class="page">
-          <span class="page-number">01</span>
-          <p class="eyebrow">Introducción</p>
-          <h2>Una marca diseñada para transmitir confianza.</h2>
-          <p>Vital Agentes es una marca enfocada en comunicar seguridad, protección y cercanía humana dentro del sector asegurador.</p>
-          <p>La identidad visual busca posicionarse como una aseguradora moderna, profesional y premium.</p>
-          <div class="note-card"><strong>Objetivo:</strong> mantener una imagen coherente, sólida y confiable en cada aplicación.</div>
-        </article>
-
-        <article class="page">
-          <span class="page-number">02</span>
-          <p class="eyebrow">Concepto del logotipo</p>
-          <h2>Escudo, vida y respaldo.</h2>
-          <div class="logo-display"><img src="assets/vitalaagentes2.png" alt="Logo Vital Agentes"></div>
-          <p>El isotipo está compuesto por una “V” estilizada integrada con un escudo y una línea vital.</p>
-        </article>
-
-        <article class="page">
-          <span class="page-number">03</span>
-          <p class="eyebrow">Elementos visuales</p>
-          <h2>Lo que comunica el símbolo.</h2>
-          <div class="meaning-list">
-            <div><span>01</span><strong>Protección</strong><p>El escudo representa seguridad y respaldo.</p></div>
-            <div><span>02</span><strong>Vida</strong><p>La línea vital conecta con salud, familia y futuro.</p></div>
-            <div><span>03</span><strong>Confianza</strong><p>La geometría comunica estabilidad y profesionalismo.</p></div>
+        <div class="hero-visual reveal">
+          <div class="orb orb-one"></div>
+          <div class="orb orb-two"></div>
+          <div class="circle-frame">
+            <div class="logo-watermark">
+              <img src="assets/logo-vital.svg" alt="">
+            </div>
+            <img class="hero-family" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=900&auto=format&fit=crop" alt="Familia recibiendo asesoría de seguros">
           </div>
-        </article>
-
-        <article class="page">
-          <span class="page-number">04</span>
-          <p class="eyebrow">Paleta oficial</p>
-          <h2>Colores corporativos.</h2>
-          <div class="color-grid">
-            <div class="color-card"><span style="background:#003A63"></span><div><strong>Azul Vital</strong><p>Pantone 2955 C</p><small>#003A63</small></div></div>
-            <div class="color-card"><span style="background:#00B388"></span><div><strong>Verde Protección</strong><p>Pantone 3395 C</p><small>#00B388</small></div></div>
-            <div class="color-card"><span style="background:#F2F2F2"></span><div><strong>Gris Claro</strong><p>Cool Gray 1 C</p><small>#F2F2F2</small></div></div>
-          </div>
-        </article>
-
-        <article class="page">
-          <span class="page-number">05</span>
-          <p class="eyebrow">Tipografía oficial</p>
-          <h2>Montserrat</h2>
-          <div class="type-sample">Aa</div>
-          <p class="alphabet">ABCDEFGHIJKLMNÑOPQRSTUVWXYZ<br>abcdefghijklmnñopqrstuvwxyz<br>1234567890 !@#$%&/()?</p>
-          <div class="spec-list">
-            <p><strong>Montserrat SemiBold:</strong> títulos y encabezados.</p>
-            <p><strong>Montserrat Regular:</strong> textos generales y subtítulos.</p>
-          </div>
-        </article>
-
-        <article class="page">
-          <span class="page-number">06</span>
-          <p class="eyebrow">Usos correctos</p>
-          <h2>Aplicaciones permitidas.</h2>
-          <ul class="check-list">
-            <li>Mantener proporciones originales.</li>
-            <li>Usar únicamente colores oficiales.</li>
-            <li>Respetar el área de seguridad.</li>
-            <li>Utilizar fondos claros o contrastantes.</li>
-            <li>Aplicar versiones verticales u horizontales autorizadas.</li>
-          </ul>
-        </article>
-
-        <article class="page">
-          <span class="page-number">07</span>
-          <p class="eyebrow danger">Usos incorrectos</p>
-          <h2>Lo que no se debe hacer.</h2>
-          <div class="wrong-grid">
-            <div><img src="assets/vitalaagentes2.png"><small>No deformar</small></div>
-            <div><img src="assets/vitalaagentes2.png"><small>No rotar</small></div>
-            <div><img src="assets/vitalaagentes2.png"><small>No cambiar colores</small></div>
-            <div><img src="assets/vitalaagentes2.png"><small>No aplicar sombras fuertes</small></div>
-          </div>
-        </article>
-
-        <article class="page">
-          <span class="page-number">08</span>
-          <p class="eyebrow">Aplicaciones</p>
-          <h2>Dónde usar el logotipo.</h2>
-          <div class="applications">
-            <span>Sitio web</span><span>Tarjetas</span><span>Credenciales</span><span>Redes sociales</span>
-            <span>Firma de correo</span><span>Presentaciones</span><span>Uniformes</span><span>Material promocional</span>
-          </div>
-        </article>
-
-        <article class="page">
-          <span class="page-number">09</span>
-          <p class="eyebrow">Comunicación</p>
-          <h2>Humana, clara y confiable.</h2>
-          <p>La marca debe hablar de manera profesional, cercana y sencilla. El objetivo es generar tranquilidad sin caer en lenguaje excesivamente técnico.</p>
-          <blockquote>“Protegemos lo que da vida a tu futuro.”</blockquote>
-        </article>
-
-        <article class="page page-cover page-hard">
-          <div class="cover-inner back-cover">
-            <img class="cover-logo" src="assets/vitalaagentes.png" alt="Vital Agentes Logo">
-            <p>Vital Agentes</p>
-            <h2>Protegemos lo que da vida a tu futuro.</h2>
-          </div>
-        </article>
+        </div>
       </div>
     </section>
 
-    <footer class="footer"><p>Tip: arrastra la esquina de la página o usa los botones.</p></footer>
+    <section class="services section" id="seguros">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Soluciones para cada etapa</p>
+          <h2>Nuestros seguros</h2>
+          <p>Coberturas completas para ti y los tuyos.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="icon">♡</div>
+            <h3>Seguro de Vida</h3>
+            <p>Protege a tu familia y asegura su bienestar financiero.</p>
+            <a href="#contacto">Ver más →</a>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="icon">▣</div>
+            <h3>Seguro de Auto</h3>
+            <p>Maneja tranquilo con la mejor cobertura para tu vehículo.</p>
+            <a href="#contacto">Ver más →</a>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="icon">✚</div>
+            <h3>Gastos Médicos</h3>
+            <p>Tu salud es lo primero, con la protección que necesitas.</p>
+            <a href="#contacto">Ver más →</a>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="icon">⌂</div>
+            <h3>Seguro de Hogar</h3>
+            <p>Protege tu hogar y lo que más te importa dentro de él.</p>
+            <a href="#contacto">Ver más →</a>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="icon">▤</div>
+            <h3>Seguro Empresarial</h3>
+            <p>Impulsa tu negocio con la protección adecuada para tu equipo.</p>
+            <a href="#contacto">Ver más →</a>
+          </article>
+        </div>
+
+        <div class="center-action reveal">
+          <a href="#contacto" class="btn btn-outline">Ver todos los seguros</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-contact section" id="beneficios">
+      <div class="container why-grid">
+        <div class="why-copy reveal" id="quienes-somos">
+          <p class="eyebrow">¿Por qué elegirnos?</p>
+          <h2>¿Por qué elegir <span>Vital Agentes?</span></h2>
+          <p>Más que vender seguros, construimos relaciones de confianza para acompañarte siempre.</p>
+
+          <ul class="check-list">
+            <li>Atención humana y cercana</li>
+            <li>Coberturas confiables</li>
+            <li>Planes accesibles</li>
+            <li>Trámites simples y rápidos</li>
+            <li>Respaldo en cada momento</li>
+          </ul>
+        </div>
+
+        <div class="office-card reveal">
+          <div class="office-ring"></div>
+          <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=800&auto=format&fit=crop" alt="Oficina Vital Agentes">
+          <img class="office-logo" src="assets/logo-vital.svg" alt="">
+        </div>
+
+        <aside class="lead-card reveal" id="contacto">
+          <h2>Déjanos tus datos y te contactaremos</h2>
+
+          <form class="lead-form" action="php/guardar.php" method="POST" id="leadForm">
+            <div class="form-row">
+              <label>
+                <span>Nombre completo</span>
+                <input type="text" name="nombre" placeholder="Ej. María González" required maxlength="120">
+              </label>
+
+              <label>
+                <span>Teléfono</span>
+                <input type="tel" name="telefono" placeholder="(55) 1234 5678" required maxlength="20">
+              </label>
+            </div>
+
+            <label>
+              <span>Correo electrónico</span>
+              <input type="email" name="correo" placeholder="ejemplo@correo.com" required maxlength="160">
+            </label>
+
+            <label>
+              <span>¿Qué seguro te interesa?</span>
+              <select name="seguro" required>
+                <option value="">Selecciona una opción</option>
+                <option value="Seguro de Vida">Seguro de Vida</option>
+                <option value="Seguro de Auto">Seguro de Auto</option>
+                <option value="Gastos Médicos">Gastos Médicos</option>
+                <option value="Seguro de Hogar">Seguro de Hogar</option>
+                <option value="Seguro Empresarial">Seguro Empresarial</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Cuéntanos brevemente qué necesitas</span>
+              <textarea name="mensaje" placeholder="Escribe tu mensaje aquí..." maxlength="1000"></textarea>
+            </label>
+
+            <input type="hidden" name="origen" value="Landing Vital Agentes">
+
+            <button type="submit" class="btn btn-primary submit-btn">✈ Quiero que me contacten</button>
+            <p class="privacy">🔒 Tu información está segura con nosotros.</p>
+          </form>
+        </aside>
+      </div>
+    </section>
+
+    <section class="testimonials section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <h2>Lo que dicen nuestros clientes</h2>
+        </div>
+
+        <div class="testimonial-grid">
+          <article class="testimonial-card reveal">
+            <div class="client">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=160&auto=format&fit=crop" alt="">
+              <div>
+                <strong>María González</strong>
+                <span>Seguro de Vida</span>
+              </div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p>“Gracias a Vital Agentes, mi familia está protegida y tengo la tranquilidad que necesitaba.”</p>
+          </article>
+
+          <article class="testimonial-card reveal">
+            <div class="client">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=160&auto=format&fit=crop" alt="">
+              <div>
+                <strong>Carlos Ramírez</strong>
+                <span>Seguro de Auto</span>
+              </div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p>“Excelente atención y rapidez en todo el proceso. Muy recomendados.”</p>
+          </article>
+
+          <article class="testimonial-card reveal">
+            <div class="client">
+              <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?q=80&w=160&auto=format&fit=crop" alt="">
+              <div>
+                <strong>Ana López</strong>
+                <span>Gastos Médicos</span>
+              </div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p>“Me ayudaron a encontrar el plan perfecto para mis necesidades.”</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="floating-cta">
+      <div class="container">
+        <div class="cta-box reveal">
+          <div class="cta-icon">♢</div>
+          <div>
+            <h2>Tu tranquilidad es nuestra misión</h2>
+            <p>Permítenos ayudarte a encontrar el seguro ideal para ti y tu familia.</p>
+          </div>
+          <a href="https://wa.me/525512345678" class="btn btn-white" target="_blank" rel="noopener">Hablar por WhatsApp</a>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.js"></script>
+  <footer class="site-footer">
+    <div class="footer-curve"></div>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo-vital-white.svg" alt="Vital Agentes">
+        <p>Protegemos lo que da vida a tu futuro.</p>
+        <div class="socials">
+          <a href="#">f</a>
+          <a href="#">◎</a>
+          <a href="#">in</a>
+          <a href="#">☏</a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Navegación</h4>
+        <a href="#inicio">Inicio</a>
+        <a href="#quienes-somos">Quiénes somos</a>
+        <a href="#seguros">Seguros</a>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+
+      <div>
+        <h4>Seguros</h4>
+        <a href="#contacto">Seguro de Vida</a>
+        <a href="#contacto">Seguro de Auto</a>
+        <a href="#contacto">Gastos Médicos</a>
+        <a href="#contacto">Seguro de Hogar</a>
+        <a href="#contacto">Seguro Empresarial</a>
+      </div>
+
+      <div>
+        <h4>Contáctanos</h4>
+        <p>☎ (55) 1234 5678</p>
+        <p>✉ hola@vitalagentes.com</p>
+        <p>⌖ Ciudad de México, México</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2025 Vital Agentes. Todos los derechos reservados.</p>
+      <p>Aviso de privacidad &nbsp; | &nbsp; Términos y condiciones</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/525512345678" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">☏</a>
+
   <script src="js/app.js"></script>
 </body>
 </html>

@@ -1,0 +1,11 @@
+<svg width="270" height="86" viewBox="0 0 270 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g transform="translate(4 5) scale(.28)">
+<path d="M90 10L162 38L145 168L90 213L35 168L18 38L90 10Z" stroke="#FFFFFF" stroke-width="10" stroke-linejoin="round"/>
+<path d="M42 48L90 182L138 48H108L90 104L72 48H42Z" fill="#FFFFFF"/>
+<path d="M5 115H64L82 82L102 155L121 115H175" stroke="#00D6A4" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<text x="75" y="38" font-family="Montserrat, Arial, sans-serif" font-size="25" font-weight="800" letter-spacing="8" fill="#FFFFFF">VITAL</text>
+<line x1="78" y1="55" x2="112" y2="55" stroke="#00D6A4" stroke-width="3" stroke-linecap="round"/>
+<text x="127" y="62" font-family="Montserrat, Arial, sans-serif" font-size="18" font-weight="600" letter-spacing="3" fill="#00D6A4">agentes</text>
+<line x1="220" y1="55" x2="253" y2="55" stroke="#00D6A4" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -1,44 +1,39 @@
-const bookElement = document.getElementById("book");
-const prevBtn = document.getElementById("prevBtn");
-const nextBtn = document.getElementById("nextBtn");
-const pageIndicator = document.getElementById("pageIndicator");
+const menuToggle = document.getElementById('menuToggle');
+const navMenu = document.getElementById('navMenu');
 
-const totalPages = document.querySelectorAll(".page").length;
+if (menuToggle && navMenu) {
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
 
-const pageFlip = new St.PageFlip(bookElement, {
-  width: 540,
-  height: 700,
-  size: "stretch",
-  minWidth: 315,
-  maxWidth: 540,
-  minHeight: 440,
-  maxHeight: 700,
-  maxShadowOpacity: 0.38,
-  showCover: true,
-  mobileScrollSupport: false,
-  flippingTime: 850,
-  usePortrait: true,
-  startZIndex: 1,
-  drawShadow: true
-});
-
-pageFlip.loadFromHTML(document.querySelectorAll(".page"));
-
-function updateIndicator() {
-  const page = pageFlip.getCurrentPageIndex() + 1;
-  pageIndicator.textContent = `Página ${page} / ${totalPages}`;
+  navMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => navMenu.classList.remove('active'));
+  });
 }
 
-prevBtn.addEventListener("click", () => pageFlip.flipPrev());
-nextBtn.addEventListener("click", () => pageFlip.flipNext());
+const reveals = document.querySelectorAll('.reveal');
 
-pageFlip.on("flip", updateIndicator);
-pageFlip.on("changeOrientation", updateIndicator);
-pageFlip.on("changeState", updateIndicator);
-
-window.addEventListener("keydown", (event) => {
-  if (event.key === "ArrowLeft") pageFlip.flipPrev();
-  if (event.key === "ArrowRight") pageFlip.flipNext();
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, {
+  threshold: 0.15
 });
 
-updateIndicator();
+reveals.forEach(element => observer.observe(element));
+
+const params = new URLSearchParams(window.location.search);
+
+if (params.get('success') === '1') {
+  alert('Gracias. Tus datos fueron enviados correctamente.');
+  window.history.replaceState({}, document.title, window.location.pathname);
+}
+
+if (params.get('error') === '1') {
+  alert('Ocurrió un error. Intenta nuevamente.');
+  window.history.replaceState({}, document.title, window.location.pathname);
+}
